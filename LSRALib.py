@@ -19,7 +19,7 @@ class periodicDataStruc:
     
     def __init__(self, phaseName, startPos, endPos, numSteps ):
         
-        self.Positions = np.linspace(startPos,endPos, numSteps)
+        self.Positions = np.linspace(startPos,endPos, numSteps).tolist()
 
         self.name = phaseName
         self.Values = self.Positions*0
